@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://datingapp.unikappstech.in/membership -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <!-- Meta data -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta content="DayOne - It is one of the Major Dashboard Template which includes - HR, Employee and Job Dashboard. This template has multipurpose HTML template and also deals with Task, Project, Client and Support System Dashboard." name="description">
+    <meta content="Spruko Technologies Private Limited" name="author">
+    <meta name="keywords" content="admin dashboard, dashboard ui, backend, admin panel, admin template, dashboard template, admin, bootstrap, laravel, laravel admin panel, php admin panel, php admin dashboard, laravel admin template, laravel dashboard, laravel admin panel">
+
+    <!-- Title -->
+    <title>Membership</title>
+
+        <!--Favicon -->
+    <link rel="icon" href="https://datingapp.unikappstech.in/public/assets/images/brand/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap css -->
+    <link href="./Membership_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Style css -->
+    <link href="./Membership_files/style.css" rel="stylesheet">
+    <link href="./Membership_files/dark.css" rel="stylesheet">
+    <link href="./Membership_files/skin-modes.css" rel="stylesheet">
+
+    <!-- Animate css -->
+    <link href="./Membership_files/animated.css" rel="stylesheet">
+
+    <!--Sidemenu css -->
+    <link href="./Membership_files/sidemenu.css" rel="stylesheet">
+
+    <!-- P-scroll bar css-->
+    <link href="./Membership_files/p-scrollbar.css" rel="stylesheet">
+
+    <!---Icons css-->
+    <link href="./Membership_files/icons.css" rel="stylesheet">
+
+    <!---Sidebar css-->
+    <link href="./Membership_files/sidebar.css" rel="stylesheet">
+
+    <!-- Select2 css -->
+    <link href="./Membership_files/select2.min.css" rel="stylesheet">
+
+    <!-- INTERNAL Fancy File Upload css -->
+    <link href="./Membership_files/fancy_fileupload.css" rel="stylesheet">
+    <link href="./Membership_files/fileupload.css" rel="stylesheet" type="text/css">
+
+    <!-- INTERNAL Gallery css -->
+    <link href="./Membership_files/gallery.css" rel="stylesheet">
+
+    <!-- <link href="https://datingapp.unikappstech.in/public/assets/plugins/notify/css/jquery.growl.css" rel="stylesheet" /> -->
+    <link href="./Membership_files/notifIt.css" rel="stylesheet">
+        
+    <!-- INTERNAL Data table css -->
+    <link href="./Membership_files/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="./Membership_files/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="./Membership_files/responsive.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- INTERNAL Pg-calendar-master css -->
+    <link href="./Membership_files/pignose.calendar.css" rel="stylesheet">
+
+
+        <!-- INTERNAL Switcher css -->
+    <link href="./Membership_files/switcher.css" rel="stylesheet">
+    <link href="./Membership_files/demo.css" rel="stylesheet">
+
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.apexcharts-canvas.dark {
+  background: #343F57;
+}
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-gridline, .apexcharts-text {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+.apexcharts-tooltip.light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+.apexcharts-tooltip.dark {
+  color: #fff;
+  background: rgba(30,30,30, 0.8);
+}
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.apexcharts-tooltip.light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+.apexcharts-tooltip.dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-z-label:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+.apexcharts-tooltip-series-group.active, .apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+.apexcharts-tooltip-candlestick {
+  padding: 4px 8px;
+}
+.apexcharts-tooltip-candlestick > div {
+  margin: 4px 0;
+}
+.apexcharts-tooltip-candlestick span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after, .apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after, .apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after, .apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-bottom.dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color:#ECEFF1
+}
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+.apexcharts-xaxistooltip-top.dark:after {
+  border-top-color:rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-top.dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.apexcharts-xaxistooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after, .apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after, .apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after, .apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-left.dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-left.dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-right.dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-right.dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.active {
+  opacity: 1;
+}
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs, .apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.active, .apexcharts-ycrosshairs.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-zoom-rect {
+  pointer-events: none;
+}
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_points, .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+.svg_select_points_l, .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+  fill: #888;
+}
+.apexcharts-canvas.zoomable .hovering-zoom {
+  cursor: crosshair
+}
+.apexcharts-canvas.zoomable .hovering-pan {
+  cursor: move
+}
+
+.apexcharts-xaxis,
+.apexcharts-yaxis {
+  pointer-events: none;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoom-in-icon,
+.apexcharts-zoom-out-icon,
+.apexcharts-reset-zoom-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoom-in-icon svg,
+.apexcharts-zoom-out-icon svg,
+.apexcharts-reset-zoom-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.dark .apexcharts-zoom-icon svg,
+.dark .apexcharts-zoom-in-icon svg,
+.dark .apexcharts-zoom-out-icon svg,
+.dark .apexcharts-reset-zoom-icon svg,
+.dark .apexcharts-pan-icon svg,
+.dark .apexcharts-selection-icon svg,
+.dark .apexcharts-menu-icon svg,
+.dark .apexcharts-toolbar-custom-icon svg{
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.selected svg {
+  fill: #008FFB;
+}
+.light .apexcharts-selection-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-in-icon:hover svg,
+.light .apexcharts-zoom-out-icon:hover svg,
+.light .apexcharts-reset-zoom-icon:hover svg,
+.light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon, .apexcharts-menu-icon {
+  position: relative;
+}
+.apexcharts-reset-zoom-icon {
+  margin-left: 5px;
+}
+.apexcharts-zoom-icon, .apexcharts-reset-zoom-icon, .apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoom-in-icon, .apexcharts-zoom-out-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoom-out-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+.apexcharts-pan-icon.selected svg {
+  stroke: #008FFB;
+}
+.apexcharts-pan-icon:not(.selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  top: 0px;
+  right: 3px;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-toolbar svg {
+  pointer-events: none;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+.dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-toolbar {
+    /*opacity: 0;*/
+  }
+
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabel, .apexcharts-datalabel-label, .apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events, .apexcharts-radar-series path, .apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Resize generated styles */
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers, .resize-triggers > div, .contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers > div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}
+</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+  <body class="app sidebar-mini is-expanded" id="index1">
+    <!---Global-loader-->
+    <div id="global-loader" class="active" style="display: none;">
+      <img src="./Membership_files/loader.svg" alt="loader">
+    </div>
+
+    <div class="page">
+      <div class="page-main is-expanded">
+
+        <!--aside open-->
+        <aside class="app-sidebar open">
+          <div class="app-sidebar__logo">
+            <a class="header-brand" href="https://datingapp.unikappstech.in/index.html">
+              <img src="./Membership_files/logo.png" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+              <img src="./Membership_files/logo-white.png" class="header-brand-img dark-logo" alt="Dayonelogo">
+              <img src="./Membership_files/favicon.png" class="header-brand-img mobile-logo" alt="Dayonelogo">
+              <img src="./Membership_files/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+            </a>
+          </div>
+          <div class="app-sidebar3 is-expanded">
+            <ul class="side-menu open">
+                <li class="side-item side-item-category mt-4">Dashboards</li>
+                <li class="slide">
+                    <a class="side-menu__item" data-toggle="slide" href="https://datingapp.unikappstech.in/dashboard">
+                        <i class="feather feather-home sidemenu_icon"></i>
+                        <span class="side-menu__label">Dashboard</span>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" data-toggle="slide" href="https://datingapp.unikappstech.in/users">
+                        <i class="feather feather-users sidemenu_icon"></i>
+                        <span class="side-menu__label">Users</span>
+                    </a>
+                </li>
+                <li class="slide is-expanded">
+                    <a class="side-menu__item active" data-toggle="slide" href="https://datingapp.unikappstech.in/membership">
+                        <i class="feather feather-shopping-cart sidemenu_icon"></i>
+                        <span class="side-menu__label">Users Membership</span>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" data-toggle="slide" href="https://datingapp.unikappstech.in/packages">
+                        <i class="fe fe-inbox sidemenu_icon"></i>
+                        <span class="side-menu__label">Credit Packages</span>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" data-toggle="slide" href="https://datingapp.unikappstech.in/abuse_report">
+                        <i class="fe fe-flag sidemenu_icon"></i>
+                        <span class="side-menu__label">Abuse Reports</span>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" data-toggle="slide" href="https://datingapp.unikappstech.in/notification">
+                        <i class="fe fe-bell sidemenu_icon"></i>
+                        <span class="side-menu__label">Notification</span>
+                    </a>
+                </li>
+              <!-- <li class="slide">
+                <a class="side-menu__item" data-toggle="slide" href="#">
+                  <i class="feather feather-home sidemenu_icon"></i>
+                  <span class="side-menu__label">HR Dashboard</span><i class="angle fa fa-angle-right"></i>
+                </a>
+                <ul class="slide-menu">
+                  <li><a href="index.html" class="slide-item">Dashboard</a></li>
+                  <li><a href="hr-department.html" class="slide-item">Department</a></li>
+                  <li class="sub-slide">
+                    <a class="sub-side-menu__item" data-toggle="sub-slide" href="#"><span class="sub-side-menu__label">Employees</span><i class="sub-angle fa fa-angle-right"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li><a class="sub-slide-item" href="hr-emplist.html">Employees List</a></li>
+                      <li><a class="sub-slide-item" href="hr-empview.html">View Employee</a></li>
+                      <li><a class="sub-slide-item" href="hr-addemployee.html">Add Employee</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="sub-side-menu__item" data-toggle="sub-slide" href="#"><span class="sub-side-menu__label">Attendance</span><i class="sub-angle fa fa-angle-right"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li><a class="sub-slide-item" href="hr-attlist.html">Attendance List</a></li>
+                      <li><a class="sub-slide-item" href="hr-attuser.html">Attendance By User</a></li>
+                      <li><a class="sub-slide-item" href="hr-attview.html">Attendance View</a></li>
+                      <li><a class="sub-slide-item" href="hr-overviewcldr.html">Overview Calender</a></li>
+                      <li><a class="sub-slide-item" href="hr-attmark.html">Attendance Mark </a></li>
+                      <li><a class="sub-slide-item" href="hr-leaves.html">Leave Settings</a></li>
+                      <li><a class="sub-slide-item" href="hr-leavesapplication.html">Leave Applications</a></li>
+                      <li><a class="sub-slide-item" href="hr-recentleaves.html">Recent Leaves </a></li>
+                    </ul>
+                  </li>
+                  <li><a href="hr-award.html" class="slide-item">Awards</a></li>
+                  <li><a href="hr-holiday.html" class="slide-item">Holidays</a></li>
+                  <li><a href="hr-notice.html" class="slide-item">Notice Board</a></li>
+                  <li><a href="hr-expenses.html" class="slide-item">Expenses</a></li>
+                  <li class="sub-slide">
+                    <a class="sub-side-menu__item" data-toggle="sub-slide" href="#"><span class="sub-side-menu__label">Payroll</span><i class="sub-angle fa fa-angle-right"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li><a class="sub-slide-item" href="hr-empsalary.html">Employee Salary</a></li>
+                      <li><a class="sub-slide-item" href="hr-addpayroll.html">Add Payroll</a></li>
+                      <li><a class="sub-slide-item" href="hr-editpayroll.html">Edit Payroll</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="hr-events.html" class="slide-item">Events</a></li>
+                  <li><a href="hr-settings.html" class="slide-item">Settings</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </div>
+        </aside>
+        <!--aside closed-->
+
+        <div class="app-content main-content">
+            <div class="side-app">
+
+                <!--app header-->
+                <div class="app-header header">
+                  <div class="container-fluid">
+                    <div class="d-flex">
+                      <a class="header-brand" href="https://datingapp.unikappstech.in/index.html">
+                        <img src="./Membership_files/logo.png" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+                        <img src="./Membership_files/logo-white.png" class="header-brand-img dark-logo" alt="Dayonelogo">
+                        <img src="./Membership_files/favicon.png" class="header-brand-img mobile-logo" alt="Dayonelogo">
+                        <img src="./Membership_files/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+                      </a>
+                      <div class="app-sidebar__toggle" data-toggle="sidebar">
+                        <a class="open-toggle" href="https://datingapp.unikappstech.in/membership#">
+                          <i class="feather feather-menu"></i>
+                        </a>
+                        <a class="close-toggle" href="https://datingapp.unikappstech.in/membership#">
+                          <i class="feather feather-x"></i>
+                        </a>
+                      </div>
+                      <div class="d-flex order-lg-2 my-auto ml-auto">
+                        
+                        <div class="dropdown header-fullscreen">
+                          <a class="nav-link icon full-screen-link">
+                            <i class="feather feather-maximize fullscreen-button fullscreen header-icons"></i>
+                            <i class="feather feather-minimize fullscreen-button exit-fullscreen header-icons"></i>
+                          </a>
+                        </div>
+                        
+                        
+                        <div class="dropdown profile-dropdown">
+                          <a href="https://datingapp.unikappstech.in/membership#" class="nav-link pr-1 pl-0 leading-none" data-toggle="dropdown">
+                            <span>
+                              <img src="./Membership_files/16.jpg" alt="img" class="avatar avatar-md bradius">
+                            </span>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow animated">
+                            <div class="p-3 text-center border-bottom">
+                                <a href="https://datingapp.unikappstech.in/membership#" class="text-center user pb-0 font-weight-bold">Admin</a>
+                                <!-- <p class="text-center user-semi-title">App Developer</p> -->
+                            </div>
+                            <a class="dropdown-item d-flex" href="https://datingapp.unikappstech.in/profile">
+                                <i class="feather feather-user mr-3 fs-16 my-auto"></i>
+                                <div class="mt-1">Profile</div>
+                            </a>
+                            <!-- <a class="dropdown-item d-flex" href="#">
+                                <i class="feather feather-settings mr-3 fs-16 my-auto"></i>
+                                <div class="mt-1">Settings</div>
+                            </a>
+                            <a class="dropdown-item d-flex" href="#">
+                                <i class="feather feather-mail mr-3 fs-16 my-auto"></i>
+                                <div class="mt-1">Messages</div>
+                            </a> -->
+                            <a class="dropdown-item d-flex" href="https://datingapp.unikappstech.in/password">
+                                <i class="feather feather-edit-2 mr-3 fs-16 my-auto"></i>
+                                <div class="mt-1">Change Password</div>
+                            </a>
+                            <a class="dropdown-item d-flex" href="https://datingapp.unikappstech.in/logout">
+                                <i class="feather feather-power mr-3 fs-16 my-auto"></i>
+                                <div class="mt-1">Sign Out</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/app header-->
+
+                                           
+<!--Page header-->
+<div class="page-header d-lg-flex d-block">
+    <div class="page-leftheader">
+        <h4 class="page-title">Membership</h4>
+    </div>
+</div>
+<!--End Page header-->
+
+<div class="row">
+    <div class="col-xl-12 col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header  border-0">
+                <h4 class="card-title">Membership</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div id="basic-datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="basic-datatable_length"><label>Show <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-control custom-select select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-7-v9fa"><option value="10" data-select2-id="select2-data-9-v2hy">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-8-y77c" style="width: 54.1719px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-basic-datatable_length-wj-container" aria-controls="select2-basic-datatable_length-wj-container"><span class="select2-selection__rendered" id="select2-basic-datatable_length-wj-container" role="textbox" aria-readonly="true" title="10">10</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="basic-datatable_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search..." aria-controls="basic-datatable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered text-nowrap border-bottom dataTable no-footer" id="basic-datatable" role="grid" aria-describedby="basic-datatable_info">
+                        <thead>
+                            <tr role="row"><th class="border-bottom-0 w-5 sorting_asc" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 24px;">No</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 193.773px;">User</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Packages Name: activate to sort column ascending" style="width: 220.445px;">Packages Name</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Packages Price: activate to sort column ascending" style="width: 148.594px;">Packages Price</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Payment ID: activate to sort column ascending" style="width: 182.336px;">Payment ID</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 109.461px;">Status</th><th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Date/Time: activate to sort column ascending" style="width: 190.391px;">Date/Time</th></tr>
+                        </thead>
+                        <tbody>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                    <tr role="row" class="odd">
+                                    <td class="sorting_1">1</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14"> </h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1 Year Unlimited Swipes</td>
+                                    <td>49.99</td>
+                                    <td>unlimitedtoken</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2024-04-15 08:51:39</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('9')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">2</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14"> </h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>50 Tokens</td>
+                                    <td>9.99</td>
+                                    <td>Androidapp10token</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2024-04-13 07:07:37</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('8')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">3</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14"> </h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>10 Tokens</td>
+                                    <td>2.99</td>
+                                    <td>Androidapp10token</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2024-04-13 06:57:36</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('7')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">4</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>50 Tokens</td>
+                                    <td>9.99</td>
+                                    <td>TalkToMe.annual</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-25 11:28:51</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('6')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">5</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>50 Tokens</td>
+                                    <td>9.99</td>
+                                    <td>TalkToMe.annual</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-25 10:53:36</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('5')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">6</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>50 Tokens</td>
+                                    <td>9.99</td>
+                                    <td>TalkToMe.annual</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-25 10:52:48</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('4')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">7</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>50 Tokens</td>
+                                    <td>9.99</td>
+                                    <td>TalkToMe.annual</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-25 10:50:23</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('3')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">8</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>10 Tokens</td>
+                                    <td>2.99</td>
+                                    <td>123456</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-25 09:48:13</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('2')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">9</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url(&#39;https://datingapp.unikappstech.in/public/uploads/profile/profile1692332692.jpg&#39;)"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">demo user</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>10 Tokens</td>
+                                    <td>2.99</td>
+                                    <td>123456</td>
+                                    <td>
+                                                                                    <span class="badge badge-success">Success</span>
+                                                                            </td>
+                                    <td>2023-07-24 11:11:25</td>
+                                    <!-- <td class="text-left d-flex">
+                                        <a class="action-btns1" onclick="editabuse_report('1')">
+                                            <i class="feather feather-edit text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                    </td> -->
+                                </tr></tbody>
+                    </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="basic-datatable_info" role="status" aria-live="polite">Showing 1 to 9 of 9 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="basic-datatable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="basic-datatable_previous"><a href="https://datingapp.unikappstech.in/membership#" aria-controls="basic-datatable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="https://datingapp.unikappstech.in/membership#" aria-controls="basic-datatable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="basic-datatable_next"><a href="https://datingapp.unikappstech.in/membership#" aria-controls="basic-datatable" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- end app-content-->
+      </div>
+
+            <!--Footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
+              <!-- Copyright © 2021 <a href="#">Dayone</a>. Designed by <a href="#">Spruko Technologies Pvt.Ltd</a> All rights reserved. -->
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer-->
+    </div>
+
+        <!-- Back to top -->
+    <a href="https://datingapp.unikappstech.in/membership#top" id="back-to-top"><span class="feather feather-chevrons-up"></span></a>
+
+    <!--Moment js-->
+    <script src="./Membership_files/moment.js"></script>
+
+    <!-- Jquery js-->
+    <script src="./Membership_files/jquery.min.js"></script>
+
+    <!-- Bootstrap4 js-->
+    <script src="./Membership_files/popper.min.js"></script>
+    <script src="./Membership_files/bootstrap.min.js"></script>
+
+    <!--Othercharts js-->
+    <script src="./Membership_files/jquery.sparkline.min.js"></script>
+
+    <!-- Circle-progress js-->
+    <script src="./Membership_files/circle-progress.min.js"></script>
+
+    <!--Sidemenu js-->
+    <script src="./Membership_files/sidemenu.js"></script>
+
+    <!-- P-scroll js-->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/plugins/p-scrollbar/p-scrollbar.js"></script> -->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/plugins/p-scrollbar/p-scroll1.js"></script> -->
+
+    <!--Sidebar js-->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/plugins/sidebar/sidebar.js"></script> -->
+
+    <!-- Select2 js -->
+    <script src="./Membership_files/select2.full.min.js"></script>
+
+        
+    <!-- INTERNAL Chart js -->
+    <script src="./Membership_files/chart.bundle.js"></script>
+    <script src="./Membership_files/utils.js"></script>
+
+    <!-- INTERNAL Apexchart js-->
+    <script src="./Membership_files/apexcharts.js"></script>
+
+    <!-- INTERNAL Data tables -->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="https://datingapp.unikappstech.in/public/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+    <script src="https://datingapp.unikappstech.in/public/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+    <script src="https://datingapp.unikappstech.in/public/assets/plugins/datatable/responsive.bootstrap4.min.js"></script> -->
+
+    <script src="./Membership_files/jquery.dataTables.min.js"></script>
+    <script src="./Membership_files/dataTables.bootstrap4.js"></script>
+    <script src="./Membership_files/dataTables.buttons.min.js"></script>
+    <script src="./Membership_files/buttons.bootstrap4.min.js"></script>
+    <script src="./Membership_files/jszip.min.js"></script>
+    <script src="./Membership_files/pdfmake.min.js"></script>
+    <script src="./Membership_files/vfs_fonts.js"></script>
+    <script src="./Membership_files/buttons.html5.min.js"></script>
+    <script src="./Membership_files/buttons.print.min.js"></script>
+    <script src="./Membership_files/buttons.colVis.min.js"></script>
+    <script src="./Membership_files/dataTables.responsive.min.js"></script>
+    <script src="./Membership_files/responsive.bootstrap4.min.js"></script>
+    <script src="./Membership_files/datatables.js"></script>
+
+    <!-- INTERNAL Gallery js -->
+    <script src="./Membership_files/picturefill.js"></script>
+    <script src="./Membership_files/lightgallery.js"></script>
+    <script src="./Membership_files/lg-pager.js"></script>
+    <script src="./Membership_files/lg-autoplay.js"></script>
+    <script src="./Membership_files/lg-fullscreen.js"></script>
+    <script src="./Membership_files/lg-zoom.js"></script>
+    <script src="./Membership_files/lg-hash.js"></script>
+    <script src="./Membership_files/lg-share.js"></script>
+    <script src="./Membership_files/gallery.js"></script>
+    
+    <!-- INTERNAL File uploads js -->
+    <script src="./Membership_files/dropify.js"></script>
+    <script src="./Membership_files/filupload.js"></script>
+
+    <!-- INTERNAL Pg-calendar-master js -->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/plugins/pg-calendar-master/pignose.calendar.full.min.js"></script> -->
+
+    <!-- INTERNAL Index js-->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/js/index4.js"></script> -->
+    <!-- <script src="https://datingapp.unikappstech.in/public/assets/js/project/project-sidemenuchart.js"></script> -->
+
+    <!-- INTERNAL Notifications js -->
+    <script src="./Membership_files/notifIt.js"></script>
+
+    <!-- INTERNAL Index js-->
+    <script src="./Membership_files/hr-emp.js"></script>
+    <!-- Custom js-->
+    <script src="./Membership_files/custom.js"></script>
+
+        <!-- Switcher js -->
+    <script src="./Membership_files/switcher.js"></script>
+    <script type="text/javascript">
+                    </script>
+      
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>
